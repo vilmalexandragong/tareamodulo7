@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- CLAVE para móvil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTurismo Verde - Landing Responsive</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo" aria-label="Logo">EV</div>
+        <div class="brand-text">
+          <strong>EcoTurismo Verde</strong>
+          <span class="slogan">Viajes sostenibles</span>
+        </div>
+      </div>
+
+      <a class="nav-link" href="#planes">Planes</a>
+    </nav>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Explora naturaleza sin dejar huella</h1>
+        <p>
+          Rutas guiadas, turismo comunitario y experiencias eco-friendly.
+          Optimizado para móvil: rápido, claro y fácil de navegar.
+        </p>
+
+        <div class="cta-row">
+          <a class="cta" href="#planes">Ver planes</a>
+          <a class="cta secondary" href="#multimedia">Ver multimedia</a>
+        </div>
+
+        <ul class="bullets">
+          <li>Diseño responsive</li>
+          <li>Botones táctiles</li>
+          <li>Multimedia compatible</li>
+        </ul>
+      </div>
+
+      <!-- Imagen responsive -->
+      <div class="hero-media">
+        <img
+          src="media/paisaje.jpg"
+          alt="Paisaje natural"
+          class="hero-img"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="planes" class="section">
+      <h2>Planes destacados</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Ruta Verde</h3>
+          <p>Senderismo + tour comunitario.</p>
+          <span class="price">$99</span>
+        </article>
+
+        <article class="card">
+          <h3>Aventura Eco</h3>
+          <p>Río + bosque + fotografía.</p>
+          <span class="price">$129</span>
+        </article>
+
+        <article class="card">
+          <h3>Experiencia Local</h3>
+          <p>Gastronomía + cultura + guía.</p>
+          <span class="price">$79</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="multimedia" class="section">
+      <h2>Multimedia</h2>
+      <p class="muted">
+        En móvil, los videos y audios deben ser opcionales (sin autoplay) y con controles.
+      </p>
+
+      <div class="media-grid">
+        <!-- Video responsive -->
+        <div class="media-box">
+          <h3>Video</h3>
+          <div class="video-wrap">
+            <video controls preload="metadata">
+              <source src="media/video.mp4" type="video/mp4" />
+              Tu navegador no soporta video.
+            </video>
+          </div>
+        </div>
+
+        <!-- Audio -->
+        <div class="media-box">
+          <h3>Audio</h3>
+          <audio controls preload="none">
+            <source src="media/sonido.mp3" type="audio/mpeg" />
+            Tu navegador no soporta audio.
+          </audio>
+          <p class="muted small">
+            Consejo: usa audios cortos y evita reproducción automática.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 EcoTurismo Verde</p>
+  </footer>
+</body>
+</html>
